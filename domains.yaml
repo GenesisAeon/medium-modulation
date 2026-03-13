@@ -1,0 +1,5 @@
+domains:
+  medium-modulation:
+    coupling_baseline: 0.618
+    resonance_peak: 1.618
+    modulation_depth_default: 0.5
