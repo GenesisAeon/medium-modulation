@@ -1,4 +1,4 @@
-﻿[project]
+[project]
 name = "medium-modulation"
 version = "0.3.1"
 description = "Resonant medium between SâˆA and SâˆV â€“ fractal modulation operators, resonance spectra and tunable interference for controlled information propagation."
