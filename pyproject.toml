@@ -1,7 +1,7 @@
-[project]
+﻿[project]
 name = "medium-modulation"
-version = "0.1.0"
-description = "Resonant medium between S∝A and S∝V – fractal modulation operators, resonance spectra and tunable interference for controlled information propagation."
+version = "0.3.1"
+description = "Resonant medium between SâˆA and SâˆV â€“ fractal modulation operators, resonance spectra and tunable interference for controlled information propagation."
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
@@ -52,3 +52,4 @@ addopts = "--cov=medium_modulation --cov-report=term-missing -v"
 [tool.coverage.run]
 source = ["src"]
 omit = ["tests/*"]
+
