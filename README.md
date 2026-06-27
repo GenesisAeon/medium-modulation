@@ -4,7 +4,7 @@
 
 [![CI](https://github.com/GenesisAeon/medium-modulation/actions/workflows/ci.yml/badge.svg)](https://github.com/GenesisAeon/medium-modulation/actions/workflows/ci.yml)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: GPL v3 (code) / CC BY 4.0 (docs)](https://img.shields.io/badge/License-GPLv3%20%2B%20CC%20BY%204.0-blue.svg)](LICENSE)
 
 medium-modulation serves as the dynamic coupling layer that modulates the fundamental duality of the GenesisAeon framework: action-governed entropy production (S ∝ A) versus volume-governed informational expansion (S ∝ V).
 
@@ -12,7 +12,7 @@ Through fractal modulation operators, resonance spectra, and tunable interferenc
 
 ---
 
-## Install
+## Installation
 
 ```bash
 pip install medium-modulation
@@ -64,7 +64,30 @@ medium-modulation/
 | `entropy-table` | Domain relation registry |
 | `implosive-genesis` | Fractal emergence substrate |
 
-**DOI** (after Zenodo release): 10.5281/zenodo.XXXXXXX
+## Role in the GenesisAeon Ecosystem
+
+`medium-modulation` (P-MEDIUM) is the resonant coupling layer of the
+GenesisAeon framework: it sits between action-governed entropy production
+(S∝A) and volume-governed informational expansion (S∝V), turning their
+tension into coherent emergence via fractal modulation operators and
+tunable interference fields.
+
+## License
+
+This repository is dual-licensed:
+
+- **Source code** — GNU General Public License v3.0 or later (GPL-3.0-or-later). See [LICENSE-CODE](LICENSE-CODE).
+- **Documentation** — Creative Commons Attribution 4.0 International (CC BY 4.0). See [LICENSE-DOCS](LICENSE-DOCS).
+
+See [LICENSE](LICENSE) for details.
+
+## Citation
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.PLACEHOLDER.svg)](https://doi.org/10.5281/zenodo.PLACEHOLDER)
+
+DOI will be assigned automatically on first GitHub Release once
+Zenodo–GitHub integration is enabled for this repo.
+
 **PyPI**: https://pypi.org/project/medium-modulation/
 
 ---
