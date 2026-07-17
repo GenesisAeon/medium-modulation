@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "medium-modulation"
+version: "1.0.0"
+date-released: "2026-06-28"
+authors:
+  - name: "GenesisAeon Team"
+    email: team@genesisaeon.org
+repository-code: "https://github.com/GenesisAeon/medium-modulation"
+license: GPL-3.0-or-later
+abstract: "Resonant medium between S∝A and S∝V – fractal modulation operators, resonance spectra and tunable interference for controlled information propagation."
+keywords:
+  - GenesisAeon
+  - UTAC
+  - CREP
+  - open-science
