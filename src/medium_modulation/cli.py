@@ -1,9 +1,20 @@
 """CLI mm – medium-modulation command-line interface."""
 
+import io
+import sys
+
 import numpy as np
 import typer
 from rich.console import Console
 from rich.table import Table
+
+# Windows consoles default to a non-UTF-8 codepage, which breaks the math
+# symbols used throughout this CLI (S∝A/S∝V etc.) with UnicodeEncodeError.
+# Force UTF-8 stdout/stderr so behavior matches Linux/macOS terminals.
+if isinstance(sys.stdout, io.TextIOWrapper):
+    sys.stdout.reconfigure(encoding="utf-8")
+if isinstance(sys.stderr, io.TextIOWrapper):
+    sys.stderr.reconfigure(encoding="utf-8")
 
 from .core import coupling_factor, modulated_entropy, resonance_spectrum
 
