@@ -5,7 +5,8 @@ from importlib.metadata import version as _version
 
 try:
     __version__ = _version("medium-modulation")
-except PackageNotFoundError:  # pragma: no cover - not installed, e.g. running from source
+except PackageNotFoundError:
+    # Not installed, e.g. running from source.
     __version__ = "0.0.0+unknown"
 
 from .core import coupling_factor, modulated_entropy, resonance_spectrum
