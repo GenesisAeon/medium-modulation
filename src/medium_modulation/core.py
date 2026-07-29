@@ -60,7 +60,15 @@ def resonance_spectrum(freqs: np.ndarray, depth: float = 0.5) -> np.ndarray:
 
 
 def coupling_factor(A: float, V: float, modulation_depth: float = 0.5) -> float:
-    """Dynamic coupling strength between action and volume at t=0.
+    """Peak dynamic coupling strength between action and volume.
+
+    Evaluated at the modulation operator's maximum (sin(freq*t + phi) = 1),
+    which is independent of freq/phi and therefore the natural fixed point
+    for reporting how strongly the coupling responds to modulation_depth.
+
+    Note: earlier versions evaluated this at a hardcoded t=0, where
+    sin(freq*0) is always 0 regardless of freq -- making modulation_depth
+    have zero effect on the result. Fixed so the parameter is meaningful.
 
     Parameters
     ----------
@@ -72,4 +80,5 @@ def coupling_factor(A: float, V: float, modulation_depth: float = 0.5) -> float:
     -------
     Scalar coupling strength.
     """
-    return modulated_entropy(A, V, depth=modulation_depth, freq=1.0, t=0.0)
+    peak_modulation = 1.0 + modulation_depth
+    return _duality_factor(A * peak_modulation, V, alpha=_PHI)
