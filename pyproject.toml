@@ -1,7 +1,7 @@
 [project]
 name = "medium-modulation"
 version = "1.0.0"
-description = "Resonant medium between S∝A and S∝V – fractal modulation operators, resonance spectra and tunable interference for controlled information propagation."
+description = "Resonant medium between S~A and S~V (proportional-to) - fractal modulation operators, resonance spectra and tunable interference for controlled information propagation."
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "GPL-3.0-or-later"}

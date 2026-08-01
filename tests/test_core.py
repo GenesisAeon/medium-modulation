@@ -90,8 +90,10 @@ class TestCouplingFactor:
     def test_varies_with_depth(self):
         r1 = coupling_factor(1.0, 1.0, modulation_depth=0.0)
         r2 = coupling_factor(1.0, 1.0, modulation_depth=0.5)
-        # At t=0 sin(0)=0 so modulation=1 regardless of depth
-        assert r1 == pytest.approx(r2, rel=1e-9)
+        # Evaluated at the modulation peak, so depth must have a real,
+        # monotonic effect (previously always t=0 -> sin(0)=0 -> no effect
+        # regardless of depth; see medium-modulation-blindtest).
+        assert r2 > r1
 
     def test_a_v_influence(self):
         r1 = coupling_factor(1.0, 1.0)
