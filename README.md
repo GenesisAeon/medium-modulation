@@ -5,6 +5,7 @@
 [![CI](https://github.com/GenesisAeon/medium-modulation/actions/workflows/ci.yml/badge.svg)](https://github.com/GenesisAeon/medium-modulation/actions/workflows/ci.yml)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org)
 [![License: GPL v3 (code) / CC BY 4.0 (docs)](https://img.shields.io/badge/License-GPLv3%20%2B%20CC%20BY%204.0-blue.svg)](LICENSE)
+[![GenesisAeon Package](https://img.shields.io/badge/GenesisAeon-P75-blueviolet.svg)](https://github.com/GenesisAeon)
 
 medium-modulation serves as the dynamic coupling layer that modulates the fundamental duality of the GenesisAeon framework: action-governed entropy production (S ∝ A) versus volume-governed informational expansion (S ∝ V).
 
